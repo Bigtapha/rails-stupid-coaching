@@ -60,3 +60,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#testing to automate manual testing
+group :test do
+  # [...]
+  # gem 'capybara'             # should be there already
+  gem 'selenium-webdriver'   # should be there already
+  gem 'chromedriver-helper'  # add it!
+  gem 'launchy'              # useful for screenshots, add it too!
+end
